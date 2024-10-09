@@ -24,7 +24,6 @@ header img
 
 nav
 {
-    margin-top: 20px;
     margin-bottom: 30px;
 }
 
@@ -79,8 +78,9 @@ main p
     text-align: justify;
 }
 
-.image-container
+main article
 {
+    columns: 2;
     text-align: center;
 }
 
@@ -108,8 +108,6 @@ figcaption
 footer
 {
     margin: auto;
-    /* margin-top: 30px;
-    margin-bottom: 5px; */
     padding: 40px 40px 10px 40px;
     max-width: 800px;
     font-size: 0.8em;
