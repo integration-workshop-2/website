@@ -62,8 +62,8 @@ body
 main
 {
     margin: auto;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 main h1
@@ -82,7 +82,7 @@ main h2
 
 main p
 {
-    max-width: 1150px;
+    max-width: 100%;
     min-width: 250px;
     line-height: 2em;
     margin-bottom: 30px;
