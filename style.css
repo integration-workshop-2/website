@@ -14,14 +14,16 @@
     padding: 0;
 }
 
+
 header img
 {
     display: block;
-    max-width: 1366px;
     width: 100%;
-    margin: auto;
+    max-height: 200px; 
+    height: auto; 
+    object-fit: cover;
+    margin: 0;
 }
-
 nav
 {
     margin-bottom: 30px;
@@ -62,8 +64,8 @@ body
 main
 {
     margin: auto;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 main h1
