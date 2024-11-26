@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entregas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/elderly.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img src="img/main_background.jpg" alt="T-shirts">
+        <nav>
+            <a href="index.html">Visão Geral</a>
+            <a href="purpose.html">Proposta</a>
+            <a href="deliveries.html">Entregas</a>
+            <a href="timeline.html">Cronograma</a>
+            <a href="reports.html">Relatórios</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Semana 2</h1>
+        <section>
+            <p>Na semana 2, a estrutura mecânica começou a ser impressa em 3D como mostrado abaixo.
+            </p>
+        </section>
+        <section>
+            <article class="img-container">
+                <figure>
+                    <img src="img/dispenser/dispenser_printing2.jpeg" alt="Impressão dispenser 2">
+                </figure>
+                <figure>
+                    <img src="img/dispenser/dispenser_printing1.jpeg" alt="Impressão dispenser 1">
+                </figure>
+                <figure>
+                    <img src="img/dispenser/dispenser_printing3.jpeg" alt="Impressão dispenser 3">
+                </figure>
+            </article>
+        </section>
+        <section>
+            <p>Além disso, iniciou-se a modelagem do sistema de adquirir e transmitir imagens. O ESP32CAM abre um
+                servidor HTTP na porta 80. Ao receber uma requisição, ele captura
+                uma imagem da câmera. Após isso, ele a envia para um servidor HTTP do Raspberry Pi, sendo armazenada em
+                sua
+                memória. É importante deixar registrado que o ESP32CAM possui um
+                buffer interno em que ele armazena imagens passadas. Da maneira que configuramos esse dispositivo, uma
+                requisição tirará uma foto de alguns instantes anteriores a ela, e não do instante atual.
+                Para contornar isso, é necessário realizar duas requisições para que se renove o buffer e se adquira a
+                imagem instantânea. O sistema é ilustrado de acordo com o diagrama
+                em bloco abaixo.</p>
+        </section>
+        <section>
+            <article class="img-container one-column">
+                <figure>
+                    <img src="img/image_transmission_system/image_transmission_system.png"
+                        alt="Sistema de adquirir e transmitir imagens" class="no-shadow">
+                </figure>
+        </section>
+    </main>
+    <footer>
+        <article>
+            <a href="https://github.com/orgs/integration-workshop-2/repositories" target="_blank"><img
+                    src="img/github_icon.svg" alt="Github"></a>
+            <p>&copy; 2024 Elderly Care Assistant. All rights reserved.</p>
+        </article>
+    </footer>
+</body>
+
+</html>

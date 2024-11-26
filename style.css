@@ -97,6 +97,12 @@ main article
     text-align: center;
 }
 
+.one-column
+{
+    columns: 1;
+    text-align: center;
+}
+
 figure 
 {
     display: inline-block; 
@@ -111,6 +117,14 @@ figure img
     display: block; 
     margin: 0 auto;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+figure img.no-shadow
+{
+    width: 100%;
+    display: block; 
+    margin: 0 auto;
+    box-shadow: none;
 }
 
 figcaption
