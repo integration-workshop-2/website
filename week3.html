@@ -21,42 +21,55 @@
         </nav>
     </header>
     <main>
-        <h1>Semana 2</h1>
+        <h1>Semana 3</h1>
         <section>
-            <p>Na semana 2, a estrutura mecânica começou a ser impressa em 3D como mostrado abaixo.
+            <p>Na semana 3, a estrutura mecânica foi finalizada, como mostram as figuras abaixo.
             </p>
         </section>
         <section>
             <article class="img-container">
                 <figure>
-                    <img src="img/dispenser/dispenser_printing2.jpeg" alt="Impressão dispenser 2">
+                    <img src="img/dispenser/dispenser1.jpeg" alt="Dispenser 1">
                 </figure>
                 <figure>
-                    <img src="img/dispenser/dispenser_printing1.jpeg" alt="Impressão dispenser 1">
+                    <img src="img/dispenser/dispenser2.jpeg" alt="Dispenser 2">
                 </figure>
                 <figure>
-                    <img src="img/dispenser/dispenser_printing3.jpeg" alt="Impressão dispenser 3">
+                    <img src="img/dispenser/dispenser4.jpeg" alt="Dispenser 4">
+                </figure>
+                <figure>
+                    <img src="img/dispenser/dispenser7.jpeg" alt="Dispenser 7">
+                </figure>
+                <figure>
+                    <img src="img/dispenser/dispenser8.jpeg" alt="Dispenser 8">
                 </figure>
             </article>
         </section>
         <section>
-            <p>Além disso, iniciou-se a modelagem do sistema de adquirir e transmitir imagens. O ESP32CAM abre um
-                servidor HTTP na porta 80. Ao receber uma requisição, ele captura
-                uma imagem da câmera. Após isso, ele a envia para um servidor HTTP do Raspberry Pi, sendo armazenada em
-                sua
-                memória. É importante deixar registrado que o ESP32CAM possui um
-                buffer interno em que ele armazena imagens passadas. Da maneira que configuramos esse dispositivo, uma
-                requisição tirará uma foto de alguns instantes anteriores a ela, e não do instante atual.
-                Para contornar isso, é necessário realizar duas requisições para que se renove o buffer e se adquira a
-                imagem instantânea. O sistema é ilustrado de acordo com o diagrama
-                em bloco abaixo.</p>
-        </section>
-        <section>
-            <article class="img-container one-column">
+            <p>Além disso, o projeto da PCB também foi finalizado. O software <a href="https://www.kicad.org/">Kicad</a>
+                foi utilizado para a
+                formulação do esquemático e do planejamento da placa. Ela é simples e consiste em apenas conectores do
+                barramento de GPIO do Raspberry Pi, sensores, motores e pinos de alimentação. Nota-se a adição de um
+                plano GND a fim de evitar ruídos e interferências causados principalmente pelos motores e pela fonte de
+                alimentação. Também foram adicionados capacitores passa-baixas. Seguem as imagens abaixo.
+            </p>
+            <article class="img-container">
                 <figure>
-                    <img src="img/image_transmission_system/image_transmission_system.png"
-                        alt="Sistema de adquirir e transmitir imagens" class="no-shadow">
+                    <img src="img/hardware/schematic.png" alt="Esquemático">
                 </figure>
+                <figure>
+                    <img src="img/hardware/pcb.png" alt="PCB">
+                </figure>
+                <figure>
+                    <img src="img/hardware/pcb_3d_1.png" alt="PCB 3D 1">
+                </figure>
+                <figure>
+                    <img src="img/hardware/pcb_3d_2.png" alt="PCB 3D 2">
+                </figure>
+                <figure>
+                    <img src="img/hardware/pcb_3d_3.png" alt="PCB 3D 3">
+                </figure>
+            </article>
         </section>
     </main>
     <footer>
