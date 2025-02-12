@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entregas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/elderly.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img src="img/main_background.jpg" alt="medicine">
+        <nav>
+            <a href="index.html">Visão Geral</a>
+            <a href="purpose.html">Proposta</a>
+            <a href="deliveries.html">Entregas</a>
+            <a href="timeline.html">Cronograma</a>
+            <a href="reports.html">Relatórios</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Semana 5</h1>
+        <section>
+            <p>Na semana 4, houve a finalização do backend do sistema, bem como avanços no frontend. Como descrito na
+                proposta, haverá uma aplicação web que permitirá a interação dos usuários com o sistema, principalmente
+                para a criação de entidades tais como pacientes, remédios, rotinas etc. Além disso, a aplicação mostrará
+                dados relevantes aos cuidadores, como alarmes se algum paciente não foi reconhecido ou se há alguma
+                medição de sinal vital fora de um valor padrão.
+            </p>
+            <p>
+                Primeiramente, criou-se uma rede local para que o Raspberry Pi, ESP32CAM e Máquina Principal pudessem se
+                comunicar. Assim, a Máquina Principal abriu um hotspot e os outros dispositivos se conectaram a ela com
+                IP fixo configurado. O backend da aplicação foi inteiramente construído em Python com uma arquitetura
+                baseada em casos de uso e repositórios. Já no frontend, o desenvolvimento foi feito em cima de React. O
+                diagrama de classes abaixo mostra o padrão construído:
+            </p>
+        </section>
+        <section>
+            <article class="class-diagram">
+                <figure>
+                    <img src="img/software/class_diagram.jpg" alt="Class diagram">
+                </figure>
+            </article>
+        </section>
+        <section>
+            <p>Todos os dados são salvos num banco de dados MySQL na Máquina Principal. O diagrama
+                entidade-relacionamento é mostrado abaixo:
+            </p>
+        </section>
+        <section>
+            <article class="entity-relationship-diagram">
+                <figure>
+                    <img src="img/software/entity_relationship_diagram.png" alt="Entity relationship diagram">
+                </figure>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <article>
+            <a href="https://github.com/orgs/integration-workshop-2/repositories" target="_blank"><img
+                    src="img/github_icon.svg" alt="Github"></a>
+            <p>&copy; 2024 Elderly Care Assistant. All rights reserved.</p>
+        </article>
+    </footer>
+</body>
+
+</html>
